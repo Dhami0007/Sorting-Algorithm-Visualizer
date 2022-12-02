@@ -163,6 +163,18 @@ def insertion_sort(draw_info, ascending=True):
 
 # ------------------------------------------------------------------------------------------------------------------------------------
 
+def merge_sort(draw_info, ascending = True):
+    theList = draw_info.lst
+
+    left_list = theList[:len(theList)//2]
+    right_list = theList[(len(theList)//2)+1:]
+
+    merge_sort(left_list, draw_info, ascending)
+    merge_sort(right_list, draw_info, ascending)
+
+    # Under Construction XX
+# ------------------------------------------------------------------------------------------------------------------------------------
+
 
 def main():
     continue_condition = True
